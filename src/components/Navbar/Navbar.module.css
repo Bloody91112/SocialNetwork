@@ -12,7 +12,6 @@
 }
 
 .item:hover {
-  color: rgb(168, 47, 47);
   cursor: pointer;
   transition-duration: 0.2s;
 }
