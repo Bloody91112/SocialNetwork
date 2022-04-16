@@ -4,6 +4,7 @@ import logotip from "../../assets/images/logotip.svg"
 import { useDispatch, useSelector } from 'react-redux';
 import { getIsAuth, getlogin, getTestingMode } from '../../redux/header-selectors';
 import { logout } from '../../redux/auth-reducer';
+import { deactivateTestingMode } from '../../redux/app-reducer';
 
 
 
@@ -17,6 +18,7 @@ const Header = () => {
     const dispatch = useDispatch()
 
     const handleClick = () => {
+        dispatch(deactivateTestingMode())
         dispatch(logout())
         navigate('login', { replace: true })
         

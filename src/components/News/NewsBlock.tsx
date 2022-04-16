@@ -45,6 +45,15 @@ const NewsBlock:React.FC<newsType> = ({id,title,text,author,authorAvatar,likesCo
                     {likesCount}
                 </span>
             </div>}
+            < div className={classes.likes}>
+                <button onClick={() => { setLike(id) }}
+                    className={classes.buttonDT}>
+                    &#10084;
+                </button>
+                <span className={classes.buttonDT}>
+                    {likesCount}
+                </span>
+            </div>
         </div>
     )
 }

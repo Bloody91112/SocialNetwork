@@ -108,4 +108,10 @@
 .buttonDT{
     background-color: black;
     color: rgb(0, 119, 12);
+    font-size: 25px;
+    padding: 0;
+    height: 37px;
+    width: 37px;
+    border: none;
+    cursor: pointer;
 }
