@@ -23,7 +23,9 @@
   position: relative;
 }
 
-
+a{
+  text-transform: none;
+}
 
 .testingMode h1{
   color: rgb(0, 119, 12);

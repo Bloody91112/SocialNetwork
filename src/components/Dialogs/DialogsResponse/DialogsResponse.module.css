@@ -36,3 +36,10 @@
         display: none;
     }
 }
+
+
+.responseDT{
+    background-color: black;
+    color: rgb(0, 119, 12);
+    border: 2px solid rgb(0, 119, 12);
+}

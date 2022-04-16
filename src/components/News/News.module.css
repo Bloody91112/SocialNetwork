@@ -98,3 +98,14 @@
         border-radius: 3px;
     }
 }    
+
+.newsElementDT{
+    color: rgb(0, 119, 12);
+    background-color: black;
+    border: 3px solid rgb(0, 119, 12);
+}
+
+.buttonDT{
+    background-color: black;
+    color: rgb(0, 119, 12);
+}

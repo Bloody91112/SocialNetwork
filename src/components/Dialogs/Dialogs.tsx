@@ -8,6 +8,7 @@ import { addMessage } from '../../redux/dialogs-reducer';
 import AddMessageForm from './DialogsForm';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAuthors, getMessages, getResponses } from '../../redux/dialogs-selectors';
+import { getTestingMode } from '../../redux/profile-selectors';
 
 
 
@@ -17,6 +18,7 @@ const Dialogs = () => {
     const authors = useSelector( getAuthors )
     const messages = useSelector( getMessages )
     const responses =useSelector( getResponses )
+    const testingMode = useSelector( getTestingMode)
 
     const dispatch = useDispatch()
     let [currentId, changeId] = useState(1)
@@ -49,7 +51,7 @@ const Dialogs = () => {
                 <div className={classes.authors}>
                     {authorsElements}
                 </div>
-                <div className={classes.AllMessages}>
+                <div className={testingMode? classes.AllMessagesDT + " " + classes.AllMessages: classes.AllMessages}>
                     <div className={classes.chat}>
                         <span className={classes.authorName}>{authors[currentId - 1].name}</span>
                         {messagesElements}

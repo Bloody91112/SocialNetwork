@@ -46,7 +46,7 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div>
-                <NavLink to='/users' className={navData => (navData.isActive ? classes.active : classes.item)
+                <NavLink id='users' to='/users' className={navData => (navData.isActive ? classes.active : classes.item)
                     + " " + (testingMode ? classes.buttonDT : '')}
                 >
                     Users

@@ -9,6 +9,7 @@ const News = () => {
 
     const news = useSelector( (state:AppStateType) => state.news.newsBlocks )
     
+
     let newsElements = news.map(
         (newsObj: newsType) =>
             <NewsBlock id = {newsObj.id} authorAvatar={newsObj.authorAvatar} key={newsObj.id} text={newsObj.text}

@@ -8,6 +8,7 @@ import UsersSearchForm from './UsersSearchForm';
 import { filterType, requestUsers, follow, unfollow } from '../../redux/users-reducer';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCurrentPage, getFollowingInProgress, getPageSize, getTotalUsersCount, getUsers, getUsersFilter } from '../../redux/users-selectors';
+import { getTestingMode } from '../../redux/profile-selectors';
 
 
 let Users = () => {
@@ -18,7 +19,8 @@ let Users = () => {
         const pageSize = useSelector(getPageSize)
         const followingInProgress = useSelector(getFollowingInProgress)
         const filter = useSelector(getUsersFilter)
-        
+        const testingMode = useSelector(getTestingMode)
+
         const dispatch = useDispatch();
 
         useEffect( () => {
@@ -46,7 +48,9 @@ let Users = () => {
                                 className={classes.avatar} alt="" />
                         </NavLink>
                         <div className={classes.userDescription}>
-                            <div className={classes.userName}>{user.name}</div>
+                            <div className={classes.userName + " " + (testingMode&&classes.userNameDT)}>
+                                {user.name}
+                            </div>
                             <div className={classes.userStatus}>{user.status}</div>
                             <div>{user.followed
                                 ? <button className={classes.button}

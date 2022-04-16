@@ -11,6 +11,7 @@
 }
 
 
+
 .avatar img{
     width: 70px;
     height: 70px;
@@ -61,4 +62,23 @@
         padding: 0;
     }
     
+}
+
+.authorDT{
+    background-color: rgb(30, 30, 30);
+}
+
+.authorNameDT{
+    color: rgb(0, 119, 12);
+    text-decoration: none;
+}
+
+.authorNameDT:visited{
+    text-decoration: none;
+    color: rgb(0, 119, 12);
+}
+
+.authorActiveNameDT{
+    text-decoration: none;
+    color: rgb(0, 119, 12) !important;
 }

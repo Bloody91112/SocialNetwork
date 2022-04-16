@@ -129,3 +129,12 @@ span{
         margin: 20px auto;
     }
 }
+
+.userNameDT{
+    color: rgb(0, 119, 12);
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    display: inline;
+}

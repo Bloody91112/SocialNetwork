@@ -87,3 +87,13 @@
         display: none;
     }
 }
+
+.AllMessagesDT{
+    border: 3px solid rgb(0, 119, 12);
+}
+
+.buttonDT{
+    background-color: black;
+    color: rgb(0, 119, 12);
+    border: 2px solid rgb(0, 119, 12);
+}
