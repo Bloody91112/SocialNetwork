@@ -1,0 +1,85 @@
+.logotip{
+    width: 150px;
+  }
+
+
+.header {
+  background-color: rgb(68, 68, 68);
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.loginName{
+  text-transform: uppercase;
+  font-size: calc(18px + 10 * (100vw / 1440));
+  color: rgb(168, 47, 47);
+  margin-right: 20px;
+  display: inline-block;
+
+}
+
+.logButton{
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-left: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.description{
+  font-size: 20px;
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+.loginRef{
+  padding: 10px;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.logButton:hover{
+  background-color: rgb(168, 47, 47);
+}
+
+.loginRef:hover{
+  background-color: rgb(168, 47, 47);
+}
+
+.loginRef a:visited{
+  color: black;
+}
+
+@media (max-width:769px){
+  .loginName{
+    margin: 0;
+  }
+  .currentUser{
+    display: none;
+  }
+  .logButton{
+    padding: 7px;
+  }
+}
+
+.headerDT{
+  background-color: rgb(0, 119, 12);
+  color: black;
+}
+
+.logButtonDT{
+  background-color: black;
+  color: rgb(0, 119, 12);
+}

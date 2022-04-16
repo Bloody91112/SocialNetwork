@@ -1,0 +1,22 @@
+
+.item{
+  color: white;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+.avatar img{
+  display: inline;
+  width: 80px;
+}
+
+.likes{
+  color: red;
+  font-size: 15px;
+}
+
+.postInfo{
+  margin-left: 15px;
+}
+

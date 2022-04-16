@@ -1,0 +1,63 @@
+.postsBlock{
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
+    width: 70%;
+    margin: 0 auto;
+    color:white;
+    font-size: 26px;
+    padding: 30px 50px;
+    margin-top: 50px;
+    border: 5px solid rgb(68, 68, 68);
+}
+
+.posts{
+    margin-top: 10px;
+}
+
+.newPostBlock{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newPost{
+    flex: 1 1 auto;
+    height: 70px;
+    resize: none;
+    font-size: calc(18px + 10 * (100vw / 1440));
+    max-width: 500px;
+    border: 3px solid black;
+}
+
+.addPostButton{
+    display: inline;
+    text-transform: uppercase;
+    max-width: 200px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: calc(15px + 8 * (100vw / 1440));
+    border: 3px solid rgb(68, 68, 68);
+    background-color: rgb(34, 34, 34);
+    color: rgb(168, 47, 47);
+    cursor: pointer;
+}
+
+@media (max-width: 769px){
+    .postsBlock{
+        padding: 0 10px;
+        margin: 0;
+        width:unset
+    }
+    .newPostBlock{
+        padding: 20px 5px;
+    }
+}
+
+.postsBlockDT{
+    color: black;
+    background-color: rgb(0, 119, 12);
+}
+
+.addPostButtonDT{
+    color:rgb(0, 119, 12);
+}

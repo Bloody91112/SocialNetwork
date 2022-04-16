@@ -1,0 +1,31 @@
+.editProfileBlock{
+    border: 1px solid black;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  .formField{
+    padding: 10px 0;
+  }  
+
+  .loadFileButton{
+    display: block;
+  }
+  
+  .saveButton{
+    font-size: 20px;
+    padding: 5px 35px;
+    margin: 15px 0 0 0;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+  }
+
+  .formFieldDT{
+    color:  rgb(0, 119, 12);
+  }
+
+  .saveButtonDT{
+    color:  rgb(0, 119, 12);
+    border: 2px solid rgb(0, 119, 12);
+  }
+ 

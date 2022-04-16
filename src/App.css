@@ -1,0 +1,37 @@
+.app-wrapper{
+  min-height: 1000px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main{
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.app-wrapper-content{
+  background-color: rgb(170, 170, 170);
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.testingMode{
+  background-color: black;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+
+
+.testingMode h1{
+  color: rgb(0, 119, 12);
+}
+
+@media (max-width: 769px) {
+  .main{
+    flex-direction: column;
+  }
+}
+

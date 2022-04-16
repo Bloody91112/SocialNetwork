@@ -1,0 +1,35 @@
+
+
+  .contactValue{
+    color: rgb(168, 47, 47);
+    display: inline-block;
+    font-weight: 800;
+    margin-left: 10px;
+    font-weight: 600; 
+  
+  }
+
+  .correctContact{
+    padding: 0;
+  }
+
+  .contactTitle{
+    display: inline-block;
+    width: 100px;
+    text-transform: capitalize;
+  }
+
+@media (max-width:769px){
+  .contact{
+    padding: 0;
+    font-size: 20px;
+
+  }
+  .contactTitle{
+    font-weight: bold;
+  }
+}
+
+.contactDT{
+  color:  rgb(0, 119, 12);
+}

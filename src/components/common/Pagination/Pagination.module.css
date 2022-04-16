@@ -1,0 +1,66 @@
+.selectedPage{
+    font-weight: bold;
+}
+
+.page:hover{
+    background-color: rgb(170, 170, 170);
+    color: white;
+}   
+
+.page ,.selectedPage{
+    text-align: center;
+    width: 38px;
+}
+
+.selectedPage:hover{
+    background-color: rgb(170, 170, 170);
+    color: white;
+
+}
+
+.pageNumbers{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor:unset;
+    background-color: rgb(182, 182, 182);
+}
+
+.pageNumbers:hover{
+   background-color: unset;
+}
+
+.button{
+    background-color: black;
+    border: none;
+    margin: 2px;
+    padding: 5px 10px;
+    border: 3px solid grey;
+    color: whitesmoke;
+}
+
+.paginator{
+    width:max-content;
+    color: black;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.paginatorBlock{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+
+@media (max-width:769px){
+    .button{
+        padding: 2px 4px;
+    } 
+}

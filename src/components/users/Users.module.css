@@ -1,0 +1,131 @@
+.avatar{
+    height: 80px;
+    width: 80px;
+}
+
+.selectedPage{
+    font-weight: bold;
+}
+
+span{
+    cursor: pointer;
+    padding: 0 2px;
+    user-select: none;
+}
+
+.form{
+    margin: 30px 0 30px 30px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search{
+    display: flex;
+}
+
+.input{
+    font-weight: 800;
+    font-size: calc(12px + 6 * (100vw / 1440));
+    padding: 5px;
+    color: rgb(168, 47, 47);
+    border: none;
+    background-color: rgb(30, 30, 30);
+}
+
+.option{
+    font-weight: 800;
+    font-size: calc(11px + 6 * (100vw / 1440));
+    padding: 5px;
+    color: rgb(168, 47, 47);
+    border: none;
+    background-color: rgb(30, 30, 30);
+}
+
+.select{
+    font-weight: 800;
+    font-size: calc(11px + 6 * (100vw / 1440));
+    padding: 5px;
+    color: rgb(168, 47, 47);
+    border: none;
+    background-color: rgb(30, 30, 30);
+    border-left: 2px solid black;
+}
+.inputButton{
+    display: inline;
+    text-transform: uppercase;
+    max-width: 200px;
+    border: 2px solid black;
+    padding: 5px 15px;
+    font-size: calc(12px + 8 * (100vw / 1440));
+    background-color: rgb(34, 34, 34);
+    color: rgb(168, 47, 47);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.inputButton:hover{
+    font-weight: bold;
+    background-color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+.title{
+    margin: 30px 0 0 30px;
+    display: inline-block;
+    font-size: calc(44px + 10 * (100vw / 1440));
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+
+
+.allUsers{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.user{
+    display: flex;
+    margin: 10px 50px;
+
+}
+
+.userName{
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    display: inline;
+}
+
+.userStatus{
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    display: block;
+    max-width: 200px;
+}
+
+.button{
+    margin-left: 10px;
+    padding: 5px;
+    background-color: black;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    border: 3px solid white;
+
+}
+
+@media (max-width:769px){
+    .form{
+        margin: 20px auto;
+    }
+}

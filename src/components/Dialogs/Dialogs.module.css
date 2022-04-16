@@ -1,0 +1,89 @@
+.dialogs{
+    display: flex;
+    
+}
+.newMessage{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.title{
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+    font-size: calc(44px + 10 * (100vw / 1440));
+    font-family: 'Bebas Neue', cursive;
+}
+
+.AllMessages{
+    padding: 10px 30px;
+    border: 5px solid grey;
+    margin-left: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+    border-radius: 10px;
+}
+
+.form{
+    flex: 1 1 auto;
+    height: 70px;
+    resize: none;
+    font-size: calc(14px + 10 * (100vw / 1440));
+    max-width: 500px;
+    border: 3px solid black;
+}
+
+.addMessageButton{
+    display: inline;
+    text-transform: uppercase;
+    max-width: 200px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: calc(15px + 8 * (100vw / 1440));
+    border: 3px solid rgb(68, 68, 68);
+    background-color: rgb(34, 34, 34);
+    color: rgb(168, 47, 47);
+    cursor: pointer;
+}
+
+.authorName{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.chat{
+    flex: 1 1 auto;
+    overflow: auto
+}
+
+
+
+@media (max-width:769px){
+    .dialogs{
+        flex-direction: column;
+    }
+    .authors{
+        padding: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .AllMessages{
+        padding: 5px;
+        margin:0;
+        width: unset;
+        height: 450px;
+    }
+    
+    .newMessage{
+        padding: 5px;
+    }
+    
+    .authorName{
+        display: none;
+    }
+}

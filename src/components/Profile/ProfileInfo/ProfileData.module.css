@@ -1,0 +1,167 @@
+.description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.fullPage {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.UsersPosts{
+  padding: 10px;
+  background-color: rgb(50, 50, 50);
+  width: 70%;
+  margin: 0 auto;
+  color:white;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding: 30px 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.userName{
+  
+  color: red;
+  font-weight: 800;
+  
+}
+
+.avatar{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+   
+
+.avatarBlock{
+  height: 300px;
+   width: 300px;
+   
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+  .title{
+    font-size: calc(44px + 10 * (100vw / 1440));
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  .editProfileButton{
+    display: inline;
+    text-transform: uppercase;
+    max-width: 200px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: calc(15px + 8 * (100vw / 1440));
+    border: 3px solid rgb(68, 68, 68);
+    background-color: rgb(34, 34, 34);
+    color: rgb(168, 47, 47);
+    cursor: pointer;
+  }  
+
+  .editProfileButton:hover{
+    transition-duration: 0.5s;
+    border-color: rgb(168, 47, 47);;
+  }
+
+  .rightPartContainer{
+    margin-left: 50px;
+    box-shadow: 7px 9px 15px 9px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    padding: 5px; 
+    margin-left: 60px;
+  }
+  .prop{
+    width: 300px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .propTitle{
+    font-size: calc(22px + 8 * (100vw / 1440));
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .propDescription{
+    font-weight: 800;
+    font-size: calc(14px + 8 * (100vw / 1440));
+    padding: 5px;
+    color: rgb(168, 47, 47);
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    text-transform: capitalize;
+    word-break: break-all;
+  }
+  
+
+.leftPartContainer{
+  width: 300px;
+}
+
+.showContacts{
+  font-size: calc(10px + 8 * (100vw / 1440))
+}
+
+
+@media (max-width: 769px) {
+  .rightPartContainer{
+    background-color: rgb(200, 200, 200);
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+  .description{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .prop{
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .rightPartContainer{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  
+  .propDescription{
+ 
+    border-radius: 5px;
+  }
+
+  .showContacts{
+    margin-top: 10px;
+  }
+  .editProfileButton{
+    align-self: center;
+  }
+}  
+
+
+.editProfileButtonDT{
+  color:  rgb(0, 119, 12);
+}
+
+.editProfileButtonDT:hover{
+  border: 3px solid rgb(0, 119, 12);
+  
+}
+
+.rightPartContainerDT{
+  background-color: black;
+}
+
+.propTitleDT{
+  color: rgb(0, 119, 12);
+}
+.propDescriptionDT{
+  color:rgb(0, 119, 12);
+}

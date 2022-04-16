@@ -1,0 +1,51 @@
+.formControl.error input,
+.formControl.error textarea {
+    border: solid red 2px;
+}
+
+
+.formControl.error span {
+   color: red;
+}
+
+.error{
+    background-color: unset;
+}
+
+.error:hover{
+    background-color: unset;
+}
+
+.CheckBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.rememberMe{
+    padding-bottom: 5px;
+    font-size: calc(9px + 10 * (100vw / 1440));
+    color: rgb(168, 47, 47);
+    font-weight: bold;
+}
+
+.squere{
+    background-color: black;
+    color: rgb(168, 47, 47);
+}
+
+.formSummaryError {
+    border: solid red 1px;
+    padding: 5px;
+    color: red;
+    font-size: 30px;
+    display: inline-block;
+}
+.spanWrapper{
+    display: flex;
+}
+
+.spanWrapper:hover{
+    background-color: unset;
+}

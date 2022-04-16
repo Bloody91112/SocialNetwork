@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.pageTitle{
+    font-weight: bold;
+    padding:  5px 30px;
+    font-size: calc(44px + 10 * (100vw / 1440));
+    font-family: 'Bebas Neue', cursive;
+}
+
+.allNewsPage{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsElement{
+    font-weight: 800;
+    font-size: calc(14px + 8 * (100vw / 1440));
+    padding: 5px 15px;
+    color: black;
+    border-radius: 20px;
+    background-color: rgb(170, 170, 170);
+    margin: 30px;
+    border: 5px solid rgb(212, 212, 212);
+}
+.title{
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+.text{
+    border-radius: 20px;
+    padding: 30px 10px;
+    background-color: rgb(216, 216, 216);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.avatar{
+    width: 70px;
+    height: 50px;
+}
+.author{
+    margin-left: 10px;
+}
+
+.authorBlock{
+    display: flex;
+    
+    
+}
+.likes{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.likesCount{
+    font-size: 15px;
+    color: black
+}
+.likeButton{
+    background-color: rgb(30, 30, 30);
+    font-size: 25px;
+    padding: 0;
+    height: 37px;
+    width: 37px;
+    border: none;
+    color: red;
+    cursor: pointer;
+    background-color: rgb(170, 170, 170);
+}
+
+.clickedButton{
+    background-color: rgb(170, 170, 170);
+    font-size: 25px;
+    padding: 0;
+    height: 37px;
+    width: 37px;
+    border: none;
+    color: rgb(255, 93, 93);
+    cursor: pointer;
+    
+}
+
+.likeButton:hover{
+    color: rgb(179, 0, 0);
+}
+  
+@media (max-width:769px){
+    .newsElement{
+        padding: 10px;
+        margin: 10px;
+    }
+    .title{
+        margin-top: 2px;
+    }
+    .text{
+        padding: 10px;
+        border-radius: 3px;
+    }
+}    

@@ -1,0 +1,38 @@
+.response{
+    padding: 2px 20px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 10px;
+    border: 10px solid rgb(128, 128, 128);
+    margin-bottom: 5px;
+    font-size: calc(18px + 8 * (100vw / 1440));
+}
+
+.responseBlock{
+
+    color: black;
+    font-size: 20px;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.me{
+    margin-right: 20px;
+}
+
+
+@media (max-width: 769px){
+    .responseBlock{
+        font-size: 15px;
+        
+    }
+    .response{
+        padding: 2px 5px;
+        border: 3px solid rgb(128, 128, 128);
+        border-radius: 5px;
+    }
+    .me{
+        display: none;
+    }
+}

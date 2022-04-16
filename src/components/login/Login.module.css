@@ -1,0 +1,86 @@
+.mainBlock{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid black;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(159, 159, 159);
+    border-radius: 10px;
+}
+
+.email,.password{
+    padding: 5px 15px;
+    text-align: center;
+    font-size: calc(9px + 10 * (100vw / 1440));
+    margin: 10px 0;
+    color: rgb(168, 47, 47);
+    font-weight: 800;
+    background-color: rgb(30, 30, 30);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.loginTitle{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.mainButton{
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    transition-duration: 0.5s;
+    font-size: calc(9px + 10 * (100vw / 1440));
+    color: rgb(168, 47, 47);
+    font-weight: bold;
+    background-color: rgb(30, 30, 30);
+}
+
+.mainButton:hover{
+    border: none;
+    background-color:  rgb(168, 47, 47);;
+    color: black;
+}
+
+.form{
+    padding: 20px;
+    border: 2px solid rgb(62, 62, 62);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px 2px rgb(122, 23, 23);
+    margin-bottom: 70px;
+    border-radius: 10px;
+    background-color: rgb(47, 47, 47);
+    border: 3px solid rgb(122, 23, 23);
+}
+
+.bottomBlock{
+    display: flex;
+    margin-top: 10px;
+}
+
+@media (max-width:769px){
+    .form{
+        padding: 5px;
+        width: 90%;
+        align-items: center;
+    }
+    .mainButton{
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    .mainBlock{
+        padding: 10px;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .email,.password{
+        width: 100%;
+    }
+}
