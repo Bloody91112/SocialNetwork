@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useMatch, useNavigate } from "react-router-dom";
-import { compose } from "redux";
-import { withRouter } from "../../hoc/withRouter";
 import { getUserProfile, getUserStatus, } from "../../redux/profile-reducer";
 import { getAuthUserId, getIsAuth, getProfile } from "../../redux/profile-selectors";
 import Preloader from "../common/preloader/Preloader";
@@ -12,27 +10,23 @@ import ProfileDataForm from "./ProfileInfo/ProfileDataForm";
 
 
 
-
-const ProfileContainer = () => {
+const ProfilePage = () => {
     
     let match = useMatch('/profile/:userId')
-
     const isAuth = useSelector(getIsAuth)
     const dispatch = useDispatch()
     const authUserId = useSelector(getAuthUserId)
-
     let navigate = useNavigate();
+
     let userId: any;
+
     if (match) {
         userId = match.params.userId;
     } else {
         userId = authUserId ? authUserId : undefined
     }
 
-
     let [editMode, changeEditMode] = useState(false);
-
-
 
     useEffect(() => {
         if (userId === undefined) {
@@ -60,6 +54,4 @@ const ProfileContainer = () => {
 }
 
 
-export default compose<any>(
-    withRouter
-)(ProfileContainer)
+export default ProfilePage
