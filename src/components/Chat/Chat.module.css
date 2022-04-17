@@ -1,0 +1,77 @@
+.title{
+    font-size: calc(44px + 10 * (100vw / 1440));
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 20px;
+  }
+
+.chat{
+  margin-left: 20px;
+  padding: 30px;
+  border: 3px solid black;
+  border-radius: 20px;
+  max-width: 610px;
+}
+
+.messages{
+  height: 300px;
+  overflow: auto;
+  max-width: 600px;
+}
+
+.message{
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.messageAvatar{
+  height: 30px;
+}
+
+.userName{
+  margin-left: 3px;
+  color: rgb(168, 47, 47);
+}
+
+.messageText{
+  margin: 0 5px;
+  background-color: rgb(206, 206, 206);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.user{
+  border: 3px solid rgb(140, 140, 140);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.addMessageForm{
+  margin: 30px 0 ;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.messageInput{
+  font-weight: 800;
+    font-size: calc(12px + 6 * (100vw / 1440));
+    padding: 5px;
+    color: rgb(168, 47, 47);
+    border: none;
+    background-color: rgb(30, 30, 30);
+}
+
+.button{
+  border: 2px solid black;
+    padding: 5px 15px;
+    font-size: calc(12px + 8 * (100vw / 1440));
+    background-color: rgb(34, 34, 34);
+    color: rgb(168, 47, 47);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}

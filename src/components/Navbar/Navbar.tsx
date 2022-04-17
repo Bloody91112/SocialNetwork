@@ -14,46 +14,49 @@ const Navbar = () => {
 
     return (
         <nav className={testingMode ? classes.navbarDT + ' ' + classes.navbar : classes.navbar}>
-
             <div className={classes.item}>
-                <NavLink to="/profile"
-                    className={navData => (navData.isActive ? classes.active : classes.item)
-                        + " " + (testingMode ? classes.buttonDT : '')}
-                >
+                <NavLink to="/profile" className={navData => (navData.isActive ?
+                    classes.active : classes.item)
+                    + " " + (testingMode ? classes.buttonDT : '')}>
                     Profile
                 </NavLink>
             </div>
             <div className={classes.item}>
                 <NavLink to="/dialogs"
-                    className={navData => (navData.isActive ? classes.active : classes.item)
-                        + " " + (testingMode ? classes.buttonDT : '')}
-                >
+                    className={navData => (navData.isActive ?
+                        classes.active : classes.item)
+                        + " " + (testingMode ? classes.buttonDT : '')}>
                     Messages
                 </NavLink>
             </div>
             <div className={classes.item}>
-                <NavLink to="/news" className={navData => (navData.isActive ? classes.active : classes.item)
-                    + " " + (testingMode ? classes.buttonDT : '')}
-                >
+                <NavLink to="/news" className={navData => (navData.isActive ?
+                    classes.active : classes.item)
+                    + " " + (testingMode ? classes.buttonDT : '')}>
                     News
                 </NavLink>
             </div>
             <div className={classes.item}>
-                <NavLink to="/settings" className={navData => (navData.isActive ? classes.active : classes.item)
-                    + " " + (testingMode ? classes.buttonDT : '')}
-                >
+                <NavLink to="/settings" className={navData => (navData.isActive ?
+                    classes.active : classes.item)
+                    + " " + (testingMode ? classes.buttonDT : '')}>
                     Settings
                 </NavLink>
             </div>
-            <div>
-                <NavLink id='users' to='/users' className={navData => (navData.isActive ? classes.active : classes.item)
-                    + " " + (testingMode ? classes.buttonDT : '')}
-                >
+            <div className={classes.item}>
+                <NavLink to='/users' className={navData => (navData.isActive ?
+                    classes.active : classes.item)
+                    + " " + (testingMode ? classes.buttonDT : '')}>
                     Users
                 </NavLink>
             </div>
-
-
+            <div className={classes.item}>
+                <NavLink to='/chat' className={navData => (navData.isActive ?
+                    classes.active : classes.item)
+                    + " " + (testingMode ? classes.buttonDT : '')}>
+                    Chat
+                </NavLink>
+            </div>
         </nav>
     )
 }

@@ -12,6 +12,7 @@ import SettingsContainer from './components/Settings/SettingsContainer';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/footer/Footer';
 
+const ChatPage = React.lazy( () => import('./components/Chat/ChatPage') )
 const DialogsPage = React.lazy(() => import('./components/Dialogs/DialogsPage'))
 const UsersPage = React.lazy(() => import('./components/users/UsersPage'))
 const ProfilePage = React.lazy(() => import('./components/Profile/ProfilePage'))
@@ -47,11 +48,13 @@ const App = () => {
               </Route>
               <Route path="/dialogs" element={<DialogsPage />}>
                 <Route path=":id" element={<DialogsPage />} />
-              </Route>
-              <Route path="/news" element={<News />} />
-              <Route path="/users" element={<UsersPage />} />
-              <Route path="/settings" element={<SettingsContainer />} />
+              </Route> 
+              <Route path="/users" element={<UsersPage />} />         
               <Route path="/login" element={<Login />} />
+              <Route path="/chat" element={<ChatPage />}/>
+
+              <Route path="/settings" element={<SettingsContainer />} />
+              <Route path="/news" element={<News />} />
             </Routes>
           </Suspense>
         </div>

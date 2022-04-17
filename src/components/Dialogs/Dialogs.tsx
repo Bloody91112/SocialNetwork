@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { reduxForm } from 'redux-form';
 import ResponseItem from './DialogsResponse/DialogsResponse';
 import { addMessage } from '../../redux/dialogs-reducer';
-import AddMessageForm from './DialogsForm';
+import AddMessageForm from './AddMessageForm';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAuthors, getMessages, getResponses } from '../../redux/dialogs-selectors';
 import { getTestingMode } from '../../redux/profile-selectors';
