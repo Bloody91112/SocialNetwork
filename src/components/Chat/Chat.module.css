@@ -32,7 +32,8 @@
 
 .userName{
   margin-left: 3px;
-  color: rgb(168, 47, 47);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .messageText{
@@ -74,4 +75,27 @@
     color: rgb(168, 47, 47);
     cursor: pointer;
     transition-duration: 0.5s;
+}
+
+.userNameTD{
+  color: rgb(0, 119, 12);
+  margin-left: 3px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.userTD{
+  border: 1px solid rgb(0, 119, 12);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.messageTextTD{
+  margin: 0 8px;
+  padding: 5px 15px;
+  color: rgb(0, 119, 12);
+  border-radius: 10px;
+  outline: 3px solid rgb(0, 119, 12);
 }

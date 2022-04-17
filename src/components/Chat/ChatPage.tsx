@@ -2,7 +2,6 @@
 import Chat from "./Chat"
 import classes from './Chat.module.css'
 
-export const ws = new WebSocket("wss://social-network.samuraijs.com/handlers/ChatHandler.ashx")
 
 export type ChatMessageType = {
     message: string

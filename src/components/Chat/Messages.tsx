@@ -1,21 +1,22 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
+import { NavLink } from 'react-router-dom'
+import { getTestingMode } from '../../redux/header-selectors'
 import classes from './Chat.module.css'
-import { ChatMessageType, ws } from './ChatPage'
+import { ChatMessageType } from './ChatPage'
 
-const Messages: React.FC = () => {
+
+
+const Messages: React.FC<{ws:WebSocket|null}> = ({ws}) => {
+
     const [messages, setMessages] = useState<ChatMessageType[]>([])
 
-    let count = useRef(0)
-
     useEffect( () => {
-        ws.addEventListener('message', (e) => {
+        ws?.addEventListener('message', (e) => {
             let newMessages = JSON.parse(e.data)
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-            count.current += 1
-            if ( count.current %2 === 0) return  
             setMessages((prevMessage)=> [...prevMessage, ...newMessages])
         })
-    },[])
+    },[ws])
 
     return <div className={classes.messages}> 
         {messages.map((m: any, index) => <Message key={index} message={m}/> )}
@@ -26,14 +27,27 @@ const Messages: React.FC = () => {
 
 const Message: React.FC <{message: ChatMessageType}> = ({message}) => {
     
+    const testingMode = useSelector(getTestingMode)
+
     return <div>
         
         <div className={classes.message}>
-            <div className={classes.user}>
+            <div className={testingMode?
+                 classes.userTD 
+                : classes.user}>       
                 <img className={classes.messageAvatar} src={message.photo} alt="" />
-                <b className={classes.userName} >{message.userName}</b>
+                <NavLink className={testingMode ?
+                    classes.userNameTD
+                    : classes.userName}
+                    to={`/profile/${message.userId}`}>
+                    {message.userName}
+                </NavLink>
             </div>
-            <div className={classes.messageText}>{message.message}</div>
+            <div className={testingMode ?
+                classes.messageTextTD
+                : classes.messageText}>
+                {message.message}
+            </div>
         </div>
     </div>
 
