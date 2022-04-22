@@ -1,5 +1,14 @@
 Соц. сеть, частично использующая стороний API. Адаптированная для мобильных устройств. Проект реализован на стеке TypeScript/React/Redux. Реализован поиск пользователей, подписка на них, просмотр их личных страниц. Есть возможность редактировать свою личную информацию, загружать фото, добавлять посты. Реализованы диалоги, но локально, без серверных запросов, но есть общий чат. Есть возможность включить темную тему. В целом в проекте используюся все технологии, актуальные на сегодняшний день
 
+![SocialNetwork](https://user-images.githubusercontent.com/35895156/164775908-fc58db80-e5c4-4f82-93dc-6ea6083f35fa.png)
+![SocialNetwork2](https://user-images.githubusercontent.com/35895156/164775935-3e130c71-2343-4222-b294-6f4e465a4b32.png)
+![SocialNetwork3](https://user-images.githubusercontent.com/35895156/164775951-41dd0a6d-ec6f-43e2-bf5b-3cbae4a4abe4.png)
+![SocialNetwork4](https://user-images.githubusercontent.com/35895156/164775972-36830b9c-4ef4-465b-bde2-87f9dad4ee29.png)
+![SocialNetwork5](https://user-images.githubusercontent.com/35895156/164775986-5e607e61-2f8c-4ca6-a109-05a863bc3de5.png)
+![SocialNetwork6](https://user-images.githubusercontent.com/35895156/164776015-cff55d28-2e20-4801-b74f-3653adeaa30e.png)
+![SocialNetwork7](https://user-images.githubusercontent.com/35895156/164776025-e53e1906-d098-4496-be0a-fceca882a412.png)
+
+
 
 
 
